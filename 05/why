@@ -1,0 +1,11 @@
+I found scenario testing  especially useful  when testing for whether or not a 
+function was forcing some elements of a stream. This is because the scenarios where rather
+specific and required some ususual stream contents. On the other hand, I found property-based
+testing useful when dealing with arbitrary and "normal" streams. With these, I could test a function on
+many different kinds of streams. 
+I also thought that it depended quite a lot on what the test objective was. Some tests,
+like take(n) == take(n).take(n) seems more appropriate for generator-driven property tests,
+since I can test functionality on many different streams. I suppose it's also possible to test
+whether or not take forces anything by using a generator that includes something like
+a RuntimeException at every element in the stream (though I would have to write this myself).
+

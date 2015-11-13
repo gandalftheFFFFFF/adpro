@@ -26,14 +26,32 @@ object Monoid {
 
   // Exercise 10.1
 
-  // val intAddition =
-  // val intMultiplication =
-  // val booleanOr =
-  // val booleanAnd =
+  val intAddition = new Monoid[Int] {
+    def op(a1: Int, a2: Int) = a1 + a2
+    val zero = 0
+  }
+  
+  val intMultiplication = new Monoid[Int] {
+    def op(a1: Int, a2: Int) = a1 * a2
+    val zero = 1
+  }
+  
+  val booleanOr = new Monoid[Boolean] {
+    def op(a1: Boolean, a2: Boolean) = a1 || a2
+    val zero = false
+  }
+  
+  val booleanAnd = new Monoid[Boolean] {
+    def op(a1: Boolean, a2: Boolean) = a1 && a2
+    val zero = true
+  }
 
   // Exercise 10.2
 
-  // def optionMonoid[A] = ...
+  def optionMonoid[A] = new Monoid[Option[A]] {
+    def op (a1: Option[A], a2: Option[A]): Option[A]= a1 orElse a2
+    val zero = None
+  }
 
   def dual[A] (m :Monoid[A]) = new Monoid[A] {
     def op (a1: A, a2: A) = m.op(a2,a1)
@@ -55,11 +73,22 @@ object Monoid {
 
   // Exercise 10.5 (easy)
 
-  // def foldMap[A,B] (as: List[A], m: Monoid[B]) (f: A=>B): B =
+  def foldMap[A,B] (as: List[A], m: Monoid[B]) (f: A=>B): B = {
+    as.foldLeft (m.zero) ((b,a) =>  m.op (b,f(a)))
+  }
 
   // Exercise 10.7
 
-  // def foldMapV[A,B] (v: IndexedSeq[A], m: Monoid[B]) (f: A => B) :B =
+  def foldMapV[A,B] (v: IndexedSeq[A], m: Monoid[B]) (f: A => B) :B = {
+    if (v.length == 0) m.zero
+    else if (v.length == 1) f (v.head)
+    else {
+      val (vl,vr) = v.splitAt (v.length/2)
+      val bl = foldMapV[A,B] (vl, m) (f)
+      val br = foldMapV[A,B] (vr, m) (f)
+      (m.op(bl,br))
+    }
+  }
 
   // Exercise 9
   //

@@ -28,21 +28,26 @@ object MonoidSpec extends Properties("Monoids..") {
   // Exercise 4: test listMonoid, intAddition, intMultiplication, booleanOr,
   // booleanAnd and optionMonoid.
 
-  // property ...
-  // property ...
-  // property ...
-  // property ...
-  // property ...
-  // property ...
+  property ("listMonoid[Int] is a monoid") = monoid (listMonoid[Int])
+  property ("intAddition is a monoid") = monoid (intAddition)
+  property ("intMultiplication is a monoid") = monoid (intMultiplication)
+  property ("booleanOr is a monoid") = monoid (booleanOr)
+  property ("booleanAnd is a monoid") = monoid (booleanAnd)
+  property ("optionMonoid[Int] is a monoid") = monoid (optionMonoid[Int])
 
   // Exercise 7
 
-  // def homomorphism[A :Arbitrary,B :Arbitrary]
-  //  (ma: Monoid[A]) (f: A => B) (mb: Monoid[B]) =
+  def homomorphism[A :Arbitrary,B :Arbitrary]
+   (ma: Monoid[A]) (f: A => B) (mb: Monoid[B]) = {
+     forAll { (a1: A, a2: A) => mb.op(f(a1), f(a2)) == f(ma.op(a1, a2)) }
+    }
 
-  // def isomorphism[A :Arbitrary, B :Arbitrary] ...
+  def isomorphism[A :Arbitrary, B :Arbitrary]
+    (ma: Monoid[A]) (f: A => B, g: B => A) (mb: Monoid[B]) =
+      homomorphism (ma) (f) (mb) && homomorphism (mb) (g) (ma)
 
-  // property ("stringMonoid and listMonoid[Char] are isomorphic") = ...
+  property ("stringMonoid and listMonoid[Char] are isomorphic") = 
+    isomorphism[String,List[Char]] (stringMonoid) (_.toList,_.mkString) (listMonoid)
 
   // Exercise 8
 
