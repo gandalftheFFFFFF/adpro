@@ -179,5 +179,44 @@ class FingerTreeSpecWasowski extends FlatSpec with Checkers {
     }
   }
 
+  behavior of "FingerTree"
+
+  it should "do something" in {
+    val f = Empty()
+    assert(addL(2, f) == Single(2))
+  }
+
+  it should "generate a list of ints" in {
+    
+  }
+
+  behavior of "DoubleLinkedList"
+
+  import scala.collection.mutable.DoubleLinkedList
+
+  it should "do something else" in {
+    val l = new DoubleLinkedList[String]
+    val p = DoubleLinkedList("a","b","c")
+    assert(l.toList == List())
+    assert(l.append(DoubleLinkedList("a", "b", "c")) == p)
+    assert(l.toList == List())
+    val ll = DoubleLinkedList("q") :+ "a"
+    assert(ll.toList == List("q", "a"))
+    assert(("c" +: ll).toList == List("c","q","a"))
+  }
+ 
+  it should "fuck me" in {
+    val start = System.currentTimeMillis
+    var f = addL(1, Empty())
+    for (i <- 1 to 10) {
+      f = addL(i, f)
+    }
+    val end = System.currentTimeMillis
+    println(end-start)
+    println(f)
+  }
+  // Use Gen.oneOf to chose a random method!
 
 }
+
+

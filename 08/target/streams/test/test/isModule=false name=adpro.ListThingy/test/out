@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mListThingy:[0m[0m
+[0m[[0minfo[0m] [0m[32mDoubleLinkedList[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be empty on creation[0m[0m
+[0m[[0minfo[0m] [0m[32m- should append an item with method +[0m[0m
+[0m[[0minfo[0m] [0m[32m- should remove the first element with remove[0m[0m

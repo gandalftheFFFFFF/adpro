@@ -19,3 +19,9 @@
 [0m[[0minfo[0m] [0m[32m- should be ConsR(_,Nil) on Single[0m[0m
 [0m[[0minfo[0m] [0m[32m- should be ConsR(ConsR(_,_),_) on any tree larger than 3[0m[0m
 [0m[[0minfo[0m] [0m[32m- should have the right prefix on any tree larger than 3[0m[0m
+[0m[[0minfo[0m] [0m[32mFingerTree[0m[0m
+[0m[[0minfo[0m] [0m[32m- should do something[0m[0m
+[0m[[0minfo[0m] [0m[32m- should generate a list of ints[0m[0m
+[0m[[0minfo[0m] [0m[32mDoubleLinkedList[0m[0m
+[0m[[0minfo[0m] [0m[32m- should do something else[0m[0m
+[0m[[0minfo[0m] [0m[32m- should fuck me[0m[0m
