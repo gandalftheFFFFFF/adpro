@@ -1,0 +1,18 @@
+[0m[[0minfo[0m] [0m[32mLensesSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mitu[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show Alex at zipcode 2800[0m[0m
+[0m[[0minfo[0m] [0m[32mitu1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should show Alex at zipcode 9100[0m[0m
+[0m[[0minfo[0m] [0m[32mitu3[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have all the countries in upper case[0m[0m
+[0m[[0minfo[0m] [0m[32msetIth1[0m[0m
+[0m[[0minfo[0m] [0m[32m- should obey the PutGet law[0m[0m
+[0m[[0minfo[0m] [0m[31m- should obey the GetPut law *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  GeneratorDrivenPropertyCheckFailedException was thrown during property evaluation.[0m[0m
+[0m[[0minfo[0m] [0m[31m   (LensesSpec.scala:75)[0m[0m
+[0m[[0minfo[0m] [0m[31m    Falsified after 0 successful property evaluations.[0m[0m
+[0m[[0minfo[0m] [0m[31m    Location: (LensesSpec.scala:75)[0m[0m
+[0m[[0minfo[0m] [0m[31m    Occurred when passed generated values ([0m[0m
+[0m[[0minfo[0m] [0m[31m      arg0 = List()[0m[0m
+[0m[[0minfo[0m] [0m[31m    )[0m[0m
+[0m[[0minfo[0m] [0m[32m- should obey the PutPut law[0m[0m

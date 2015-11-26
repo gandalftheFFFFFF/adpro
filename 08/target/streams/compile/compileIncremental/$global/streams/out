@@ -2,14 +2,33 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mInvalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/home/niels/scala/2015-apro-code-examples/08/src/main/scala/adpro/FingerTree.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated products: Set(/home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$FingerTree$class.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$FingerTree$$anonfun$2.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Empty$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$FingerTree.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Reduce$class.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Empty.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Single$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Digit$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node2$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node3.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Reduce$$anonfun$toList$1.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Deep$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$ConsL$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Reduce$$anonfun$toTree$1.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Deep.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node2.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$ConsR$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$NilTree$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$FingerTree$$anonfun$1.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node3$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$FingerTree$.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Reduce.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Single.class, /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes/adpro/data$Node$class.class)[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/niels/scala/2015-apro-code-examples/08/src/main/scala/adpro/FingerTree.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	product: Set(/home/niels/scala/2015-apro-code-examples/08/src/main/scala/adpro/FingerTree.scala)[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/niels/scala/2015-apro-code-examples/08/src/main/scala/adpro/FingerTree.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 318b9976, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-feature[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/jdk1.8.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_60/jre/classes:/home/niels/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/niels/scala/2015-apro-code-examples/08/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0mScala compilation took 6.213114082 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

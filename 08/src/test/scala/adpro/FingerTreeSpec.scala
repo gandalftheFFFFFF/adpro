@@ -212,10 +212,32 @@ class FingerTreeSpecWasowski extends FlatSpec with Checkers {
       f = addL(i, f)
     }
     val end = System.currentTimeMillis
-    println(end-start)
-    println(f)
+    //println(end-start)
+    //println(f)
   }
-  // Use Gen.oneOf to chose a random method!
+
+  def doLinkedOpr(l: DoubleLinkedList[Int], opr: Int, value: Int): DoubleLinkedList[Int] = {
+    opr match {
+      case 0 => value +: l // prepend
+      case 1 => l :+ value // append
+      case 2 => l.tail // remove head
+      case 3 => l.init // remove tail
+    }
+  }
+
+  def test:  Unit = {
+    val f: FingerTree[Int] = fingerTreeOfN(10, Gen.choose(0,500)).sample.get
+    var l: DoubleLinkedList[Int] = DoubleLinkedList.range(0,500)
+    val intGen = Gen.choose(1,2)
+    val valGen = Gen.choose(0,100)
+    val start = System.currentTimeMillis
+    for (i <- 1 to 1000) {
+      l = doLinkedOpr(l, intGen.sample.get, valGen.sample.get)
+    }
+    println(System.currentTimeMillis - start)
+  }
+
+  test
 
 }
 
